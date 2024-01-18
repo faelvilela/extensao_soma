@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Soma Elementos",
+    "version": "1.0",
+    "description": "Extensão para somar elementos na estrutura X/Y.",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+        "16": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+    }
+  }
+  

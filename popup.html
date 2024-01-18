@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soma Elementos</title>
+  <meta charset="UTF-8">
+  <script src="popup.js"></script>
+  <style>
+    body {
+      width: 250px; /* Largura fixa */
+      height: 150px; /* Altura fixa */
+      position: relative; /* Importante para posicionar o botão corretamente */
+      margin-bottom: 20px; /* Espaço no final da página para não sobrepor o botão */
+    }
+    #sum {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    #calculateButton {
+      position: fixed;
+      bottom: 30px; /* Distância do botão em relação ao rodapé */
+      left: 10px; /* Distância do botão em relação à esquerda */
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Soma dos Troncos:</h1>
+  <div id="sum"></div>
+  <br>
+  <button id="calculateButton">Calcular</button>
+</body>
+</html>
